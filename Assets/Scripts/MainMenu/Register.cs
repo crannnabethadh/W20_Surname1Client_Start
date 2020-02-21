@@ -32,7 +32,7 @@ public class Register : MonoBehaviour
         messageBoardText.text += "\nId: " + player.Id;
         player.Email = emailInputField.text;
         player.Name = nameInputField.text;
-        player.BirthDay = DateTime.Parse(birthdateInputField.text, CultureInfo.CurrentCulture.DateTimeFormat);
+        player.BirthDay = DateTime.Parse(birthdateInputField.text);
         yield return InsertPlayer();
         messageBoardText.text += $"\nPlayer \"{player.Name}\" registered.";
         player.Id = string.Empty;
