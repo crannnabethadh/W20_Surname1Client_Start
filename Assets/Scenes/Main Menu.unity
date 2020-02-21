@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 355002748}
   - component: {fileID: 355002747}
   - component: {fileID: 355002746}
+  - component: {fileID: 355002749}
   m_Layer: 5
   m_Name: Play Button
   m_TagString: Untagged
@@ -496,7 +497,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 355002747}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 355002749}
+        m_MethodName: OnPlayGameButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &355002747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,6 +545,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355002744}
   m_CullTransparentMesh: 0
+--- !u!114 &355002749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355002744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192167542c4459147897083036583994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &405853281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,6 +1270,7 @@ GameObject:
   - component: {fileID: 696668815}
   - component: {fileID: 696668814}
   - component: {fileID: 696668813}
+  - component: {fileID: 696668816}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -1315,7 +1340,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 696668814}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 696668816}
+        m_MethodName: OnQuitGameButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &696668814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,6 +1388,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696668811}
   m_CullTransparentMesh: 0
+--- !u!114 &696668816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696668811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c509cdec60889e408693f8d54171701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &729027869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2309,6 +2357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1181937771}
+  - component: {fileID: 1181937772}
   m_Layer: 5
   m_Name: Login
   m_TagString: Untagged
@@ -2340,6 +2389,23 @@ RectTransform:
   m_AnchoredPosition: {x: 166, y: 84}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1181937772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181937770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3a29157c8016c4c875bf3c60263907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loginButton: {fileID: 1124237343}
+  logoutButton: {fileID: 1921994702}
+  playGameButton: {fileID: 355002746}
+  messageBoardText: {fileID: 1956952414}
+  player: {fileID: 0}
 --- !u!1 &1221850987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,7 +3544,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1921994703}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1181937772}
+        m_MethodName: OnLogoutButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1921994703
 MonoBehaviour:
   m_ObjectHideFlags: 0

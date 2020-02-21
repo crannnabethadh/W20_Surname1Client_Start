@@ -91,10 +91,8 @@ public class Register : MonoBehaviour
             {
                 throw new Exception("RegisterNewPlayer > InsertPlayer: " + httpClient.error);
             }
-            else
-            {
-                Debug.Log("RegisterNewPlayer > InsertPlayer: " + httpClient.responseCode);
-            }
+			
+			messageBoardText.text += "\nRegisterNewPlayer > InsertPlayer: " + httpClient.responseCode;
         }
 
     }
