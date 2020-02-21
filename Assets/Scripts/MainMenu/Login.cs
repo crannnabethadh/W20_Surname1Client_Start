@@ -15,11 +15,6 @@ public class Login : MonoBehaviour
     public Text messageBoardText;
     public Player player;
 
-    private void Start()
-    {
-        player = FindObjectOfType<Player>();
-    }
-
     public void OnLoginButtonClicked()
     {
         StartCoroutine(TryLogin());
